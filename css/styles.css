@@ -1,23 +1,56 @@
 .jumbotron {
   margin: 0;
   padding: 30px;
-  /*background-image: linear-gradient(to right, #170569, #3046c5, #050455);*/
-  color: orangered;
-  background-image: url(https://images.unsplash.com/photo-1508418444702-a13fe1d25171?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
-  background-size: 100%; }
+  background-image: linear-gradient(to right, #170569, #0b22a5, #050455);
+  color: white; }
+
+.jumbotron h1,
+.jumbotron h2 {
+  color: orangered; }
 
 .site-footer {
   background-image: linear-gradient(#cec8ff, white);
   padding: 20px 0; }
 
 .navbar {
-  background-color: orangered; }
+  background-color: orangered;
+  color: #0404a7; }
 
 #loginModal .modal-header {
   background-color: orangered;
   color: white; }
 
 #sellModal .modal-header {
+  background-color: orangered;
+  color: white; }
+
+#coupe1Modal .modal-header,
+#coupe1Modal .modal-header,
+#coupe1Modal .modal-header,
+#coupe1Modal .modal-header,
+#coupe1Modal .modal-header,
+#coupe1Modal .modal-header,
+#sedan1Modal .modal-header,
+#sedan1Modal .modal-header,
+#sedan1Modal .modal-header,
+#sedan1Modal .modal-header,
+#sedan1Modal .modal-header,
+#sedan1Modal .modal-header {
+  background-color: orangered;
+  color: white; }
+
+#suv1Modal .modal-header,
+#suv2Modal .modal-header,
+#suv3Modal .modal-header,
+#suv4Modal .modal-header,
+#suv5Modal .modal-header,
+#su6vModal .modal-header,
+#suv7Modal .modal-header,
+#suv8Modal .modal-header,
+#suv9Modal .modal-header,
+#suv10Modal .modal-header,
+#suv11Modal .modal-header,
+#suv12Modal .modal-header {
   background-color: orangered;
   color: white; }
 
@@ -34,10 +67,14 @@
   text-align: center; }
 
 @media only screen and (max-device-width: 1024px) {
-  .bg-1, .bg-2, .bg-3 {
+  .bg-1,
+  .bg-2,
+  .bg-3 {
     background-attachment: scroll; } }
 
-.bg-1, .bg-2, .bg-3 {
+.bg-1,
+.bg-2,
+.bg-3 {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -59,3 +96,16 @@
   margin: 0;
   border: none;
   border-radius: 0; }
+
+.btn1 {
+  background-color: orangered;
+  color: white;
+  font-weight: 10px; }
+
+.btn2 {
+  background-color: #0404a7;
+  color: white;
+  font-weight: 10px; }
+
+h2 {
+  color: #0404a7; }

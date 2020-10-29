@@ -35,7 +35,7 @@
           <div class="col-md-4 col-xl-2 mt-4">
             <a
               role="button"
-              class="btn btn-lg btn-warning"
+              class="btn1 btn-lg"
               id= "sellButton"
               >Sell Car</a
             >
@@ -66,7 +66,7 @@
               <form>
                 <div class="form-row">
                   <div class="form-group col-12">
-                    <label class="sr-only" for="loginEmail"
+                    <label class="" for="loginEmail"
                       >Email address</label
                     >
                     <input
@@ -77,12 +77,12 @@
                     />
                   </div>
                   <div class="form-group col-12">
-                    <label class="sr-only" for="loginPassword">Password</label>
+                    <label class="" for="loginPassword">Password</label>
                     <input
                       type="password"
                       class="form-control form-control-sm"
                       id="loginPassword"
-                      placeholder="Password"
+                      placeholder="Enter password"
                     />
                   </div>
                   <div class="col">
@@ -95,12 +95,12 @@
                 <div class="form-row">
                   <button
                     type="button"
-                    class="btn btn-warning btn-sm ml-auto"
+                    class="btn1 btn-sm ml-auto"
                     data-dismiss="modal"
                   >
                     Cancel
                   </button>
-                  <button type="submit" class="btn btn-primary btn-sm ml-1">
+                  <button type="submit" class="btn2 btn-sm ml-1">
                     Sign In
                   </button>
                 </div>
@@ -220,12 +220,12 @@
                   <div class="col">
                     <button
                       type="button"
-                      class="btn btn-warning ml-auto"
+                      class="btn1 ml-auto"
                       data-dismiss="modal"
                     >
                       Cancel
                     </button>
-                    <button type="submit" class="btn btn-primary">
+                    <button type="submit" class="btn2">
                       Search
                     </button>
                   </div>
@@ -305,6 +305,330 @@
         </div>
       </div>
     </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col" style="text-align: center; padding: 60px;">
+          <h2>Contact Us</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col"style="text-align: center; padding: 20px;">
+          <h3>Please Leave us Feedback:</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col" style="border: 10px solid; border-radius: 20px; padding-top: 20px; border-color: orangered;">
+          <div class="col-md-10">
+          <form>
+            <!--Notice we put each section of the form in it's own row.-->
+            <div class="form-group row">
+              <!--Use the label for to tag the words to an id in the input field, so when the user clicks on the word, it takes them to the input field. You can 
+                        also add a class directly on a label element to make it a column of the row. With the specifications you put in. Here we are making it so that this
+                        column will take up 2 spots when the viewport is md and up.-->
+              <label for="firstName" class="col-md-2 col-form-label"
+                >First Name</label
+              >
+              <!--Input element for each field of the form. Type of text means the user inputs text there. Give it an id to tag it to the label before. Give
+                        it a specific name that relates it to the form, and give it a placeholder so there is text in the field suggesting to the user what they should 
+                        enter there. Here we fill up the rest of the row with this column, so it will be 10 spots on a viewport that is md and up. -->
+              <!--Do note that each input has to be in it's own div with a column class.-->
+              <div class="col-md-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First Name"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="lastName" class="col-md-2 col-form-label"
+                >Last Name</label
+              >
+              <div class="col-md-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="areaCode" class="col-md-2 col-form-label"
+                >Contact Tel.</label
+              >
+              <!--This input has a type of "tel". This tells the server that a telephone number will be entered there.-->
+              <div class="col-5 col-md-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="areaCode"
+                  name="areaCode"
+                  placeholder="Area Code"
+                />
+              </div>
+              <div class="col-7">
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="telNum"
+                  placeholder="Tel. Number"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <!--This input has a type of "email". Tells the server an email will be entered.-->
+              <label for="email" class="col-md-2 col-form-label">Email</label>
+              <div class="col-md-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <!--This offset moves the content in the column to the right two spots on viewports md and up.-->
+              <div class="col offset-md-2">
+                May we contact you?
+                <div class="form-check form-check-inline">
+                  <!--Input type "radio" with the same names, indicate an option that the user can only pick one of. If they had different names from each other than 
+                                both selections can be made at the same time, but since they share the same name, only one option can be selected.-->
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="contactYes"
+                    name="contactRadios"
+                    value="yes"
+                  />
+                  <label for="contactYes" class="form-check-label">Yes</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="contactNo"
+                    name="contactRadios"
+                    value="no"
+                  />
+                  <label for="contactNo" class="form-check-label">No</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="feedback" class="col-md-2 col-form-label"
+                >Your Feedback</label
+              >
+              <div class="col-md-10">
+                <!--Instead of an input type here, we use a text area. This creates a larger text box where a user can enter an extended amount of characters. The amount
+                                of lines that can be used in this area is specified with the "rows" attribute.-->
+                <textarea
+                  id="feedback"
+                  class="form-control"
+                  name="feedback"
+                  rows="8"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <!--A button is created so the user can send the information inputted to the server.-->
+              <div class="offset-md-2 col-md-10">
+                <button type="submit" class="btn1 btn-warning">
+                  Send Feedback
+                </button>
+              </div>
+            </div>
+          </form>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="text-align: center; padding-top: 200px; padding-bottom: 50px;">
+        <div class="col">
+          <h3>Or Let <em>Us</em> Contact <strong>You</strong></h3>
+        </div>
+      </div>
+      <div class="row" style="padding: 50px; padding-bottom: 100px;">
+        <div class="col" style="border: 10px solid; border-radius: 20px; padding: 30px; border-color: rgb(17, 6, 114);">
+          <form>
+            <!--Notice we put each section of the form in it's own row.-->
+            <div class="form-group row">
+              <!--Use the label for to tag the words to an id in the input field, so when the user clicks on the word, it takes them to the input field. You can 
+                        also add a class directly on a label element to make it a column of the row. With the specifications you put in. Here we are making it so that this
+                        column will take up 2 spots when the viewport is md and up.-->
+              <label for="firstName" class="col-md-2 col-form-label"
+                >First Name</label
+              >
+              <div class="col-md-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                  placeholder="First Name"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="lastName" class="col-md-2 col-form-label"
+                >Last Name</label
+              >
+              <div class="col-md-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                  placeholder="Last Name"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="areaCode" class="col-md-2 col-form-label"
+                >Contact Tel.</label
+              >
+              <!--This input has a type of "tel". This tells the server that a telephone number will be entered there.-->
+              <div class="col-5 col-md-3">
+                <input
+                  type="tel"
+                  class="form-control"
+                  id="areaCode"
+                  name="areaCode"
+                  placeholder="Area Code"
+                />
+              </div>
+              <div class="col-7">
+                <input
+                  type="tel"
+                  class="form-control"
+                  name="telNum"
+                  placeholder="Tel. Number"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <!--This input has a type of "email". Tells the server an email will be entered.-->
+              <label for="email" class="col-md-2 col-form-label">Email</label>
+              <div class="col-md-10">
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Email"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <!--This offset moves the content in the column to the right two spots on viewports md and up.-->
+              <div class="col offset-md-2">
+                Preferred Contact Method?
+                <div class="form-check form-check-inline">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="contactEmail"
+                    name="contactRadios"
+                    value="yesEmail"
+                  />
+                  <label for="contactEmail" class="form-check-label">Email</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="radio"
+                    class="form-check-input"
+                    id="contactTel"
+                    name="contactRadios"
+                    value="yesTel"
+                  />
+                  <label for="contactTel" class="form-check-label">Telephone</label>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <!--This offset moves the content in the column to the right two spots on viewports md and up.-->
+              <div class="col m2-2">
+                Preferred Contact Time?
+              </div>
+            </div>  
+            <div class="form-group row">    
+              <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="time8-10"
+                    name="contactRadios"
+                    value="8-10"
+                  />
+                  <label for="contactEmail" class="form-check-label">8:00 am - 10:00 am</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="time10-12"
+                    name="contactRadios"
+                    value="10-12"
+                  />
+                  <label for="contactTel" class="form-check-label">10:00 am - 12:00 pm</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="time12-2"
+                    name="contactRadios"
+                    value="12-2"
+                  />
+                  <label for="contactEmail" class="form-check-label">12:00 pm - 2:00 pm</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="time2-4"
+                    name="contactRadios"
+                    value="2-4"
+                  />
+                  <label for="contactTel" class="form-check-label">2:00 pm - 4:00 pm</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="time4-6"
+                    name="contactRadios"
+                    value="4-6"
+                  />
+                  <label for="contactEmail" class="form-check-label">4:00 pm - 6:00 pm</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input
+                    type="checkbox"
+                    class="form-check-input"
+                    id="time6-8"
+                    name="contactRadios"
+                    value="6-8"
+                  />
+                  <label for="contactTel" class="form-check-label">6:00 pm - 8:00 pm</label>
+                </div>
+              </div>
+            <div class="form-group-row">
+              <!--A button is created so the user can send the information inputted to the server.-->
+              <div class="offset-1 col-md-10">
+                <button type="submit" class="btn2">
+                  Send Information
+                </button>
+              </div>
+            </div>
+          </form>
+      </div>
+    </div>
    
     <footer class="site-footer">
       <!--Here we make a container for all of the information below.-->
