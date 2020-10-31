@@ -1,3 +1,12 @@
+h1, h3 {
+  font-family: "Righteous", cursive; }
+
+h2, h4 {
+  font-family: "Krona One", sans-serif; }
+
+p {
+  font-family: "Lato", sans-serif; }
+
 .jumbotron {
   margin: 0;
   padding: 30px;
@@ -24,18 +33,7 @@
   background-color: orangered;
   color: white; }
 
-#coupe1Modal .modal-header,
-#coupe1Modal .modal-header,
-#coupe1Modal .modal-header,
-#coupe1Modal .modal-header,
-#coupe1Modal .modal-header,
-#coupe1Modal .modal-header,
-#sedan1Modal .modal-header,
-#sedan1Modal .modal-header,
-#sedan1Modal .modal-header,
-#sedan1Modal .modal-header,
-#sedan1Modal .modal-header,
-#sedan1Modal .modal-header {
+.modal-header {
   background-color: orangered;
   color: white; }
 

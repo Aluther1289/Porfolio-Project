@@ -3,6 +3,23 @@ $color-nav: orangered;
 $color-modal: orangered;
 $color-nav-word: rgb(4, 4, 167);
 $color-h2: rgb(4, 4, 167);
+
+$h1-font: 'Righteous', cursive;
+$h2-font: 'Krona One', sans-serif;
+$p-font: 'Lato', sans-serif;
+
+h1, h3{
+    font-family: $h1-font;
+}
+
+h2, h4{
+    font-family: $h2-font;
+}
+
+p,{
+    font-family: $p-font;
+}
+
 .jumbotron {
   margin: 0;
   padding: 30px;
@@ -41,22 +58,9 @@ $color-h2: rgb(4, 4, 167);
   }
 }
 
-#coupe1Modal,
-#coupe1Modal,
-#coupe1Modal,
-#coupe1Modal,
-#coupe1Modal,
-#coupe1Modal,
-#sedan1Modal,
-#sedan1Modal,
-#sedan1Modal,
-#sedan1Modal,
-#sedan1Modal,
-#sedan1Modal {
-  .modal-header {
+.modal-header {
     background-color: $color-modal;
     color: white;
-  }
 }
 
 #suv1Modal,
